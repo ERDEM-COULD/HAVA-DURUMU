@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  color: #333;
+  text-align: center;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#city-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+}
+
+#search-btn {
+  padding: 10px;
+  border: none;
+  background: #66a6ff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.weather-result {
+  margin-top: 20px;
+}
+
+.hourly-item {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.weather-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.daily-item {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hourly-items {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#hourly-data {
+  margin-top: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#daily-data {
+  margin-top: 20px;
+}
+
+#error-message {
+  color: red;
+  margin-top: 20px;
+}
+
+.clothing-suggestion {
+  margin-top: 10px;
+}
+
+.activity-suggestion {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-list li {
+  font-size: 16px;
+  margin-top: 5px;
+}
+/* Saatlik veriler için kaydırılabilir alan */
+.hourly-section {
+  margin-top: 20px;
+  overflow-x: auto; /* Yatay kaydırma sağlamak için */
+  white-space: nowrap; /* Elemanları yatayda sıralar */
+}
+
+.hourly-item {
+  display: inline-block;
+  width: 120px; /* Her saatlik verinin genişliği */
+  margin-right: 10px; /* Aralarındaki boşluk */
+  text-align: center;
+}
+
+.weather-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}

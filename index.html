@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hava Durumu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>Hava Durumu Uygulaması</h1>
+    <div class="search-container">
+      <input type="text" id="city-input" placeholder="Şehir girin..." />
+      <button id="search-btn">Hava Durumunu Al</button>
+    </div>
+    <div id="error-message"></div>
+
+    <div class="weather-result">
+      <h2 id="weather-temp">- °C</h2>
+      <p id="weather-description">Hava durumu: </p>
+      <p id="wind-speed">Rüzgar Hızı: </p>
+      <p id="wind-direction">Rüzgar Yönü: </p>
+      <p id="humidity">Nem: </p>
+    </div>
+
+    <div id="hourly-data" class="hourly-weather"></div> <!-- Saatlik hava durumu burada gösterilecek -->
+    <div id="daily-data" class="daily-weather"></div> <!-- Günlük hava durumu burada gösterilecek -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
